@@ -11,11 +11,10 @@ package {
     import mx.events.ScrollEvent;
     import mx.events.ScrollEventDirection;
     public class DeviceFontTest extends Sprite {
-        private const TEXT:String = "あのイーハトーヴォのすきとおった風、";
         public function DeviceFontTest() {
             var text:String = "";
             text += showDetectedFonts(["_sans", "_serif", "_typewriter"], "ABCDEabcde01234");
-            text += showDetectedFonts(["_ゴシック", "_明朝", "_等幅"], "あのイーハトーヴォのすきとおった風、");
+            text += showDetectedFonts(["_ゴシック", "_明朝", "_等幅"], "祇辻飴葛蛸鯖鰯噌庖箸");
             drawText("_sans", text, 0);
         }
         private function showDetectedFonts(deviceFonts:Array, sampleText:String):String {
